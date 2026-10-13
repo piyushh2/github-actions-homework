@@ -39,4 +39,5 @@ jobs:
         shell: bash
         env:
           IMAGE_URI: ${{ steps.build-and-scan.outputs.image_uri }}
-        run: echo "Published image URI: $IMAGE_URI"
+        run: |
+          echo "Published image URI: $IMAGE_URI"
